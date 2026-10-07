@@ -1,0 +1,12 @@
+<library path="robot_description">
+  <class name="robot_description/DiffBotSystemHardware"
+         type="robot_description::DiffBotSystemHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      ros2_control hardware interface bridging diff-drive wheel velocity commands
+      and wheel position/velocity states to an ESP32 running micro-ROS over
+      WiFi/UDP. Subscribes to sensor_msgs/msg/JointState on wheel_states and
+      publishes std_msgs/msg/Float64MultiArray on wheel_commands.
+    </description>
+  </class>
+</library>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="my_bot_ros2_control" params="name prefix use_mock_hardware use_gazebo">
+
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <xacro:if value="${use_gazebo}">
+          <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </xacro:if>
+        <xacro:if value="${use_mock_hardware}">
+          <plugin>mock_components/GenericSystem</plugin>
+          <param name="calculate_dynamics">true</param>
+        </xacro:if>
+        <xacro:unless value="${use_gazebo}">
+          <xacro:unless value="${use_mock_hardware}">
+            <plugin>robot_description/DiffBotSystemHardware</plugin>
+            <param name="wheel_states_topic">/wheel_states</param>
+            <param name="wheel_commands_topic">/wheel_commands</param>
+            <!-- state_timeout_sec: the hard fault threshold — past this, read()
+                 errors and controller_manager deactivates MyBot + both
+                 controllers (requires manual reactivation). Loosened to 8.0s
+                 so a brief WiFi/agent reconnect blip (now handled gracefully
+                 by the firmware's own reconnection state machine) doesn't
+                 cascade into a full stack reset every time. -->
+            <param name="state_timeout_sec">8.0</param>
+            <param name="startup_timeout_sec">10.0</param>
+            <!-- command_stop_timeout_sec: a much shorter, softer threshold —
+                 past this, write() zeros the commanded velocity instead of
+                 forwarding the controller's request, so the robot never
+                 drives blind (without fresh position/velocity feedback)
+                 during the gap before the harder state_timeout_sec trips. -->
+            <param name="command_stop_timeout_sec">1.0</param>
+          </xacro:unless>
+        </xacro:unless>
+      </hardware>
+      <joint name="${prefix}left_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+      <joint name="${prefix}right_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>

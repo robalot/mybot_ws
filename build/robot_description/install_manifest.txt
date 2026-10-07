@@ -1,0 +1,3 @@
+/home/rob/mybot_ws/install/robot_description/lib/librobot_description.so
+/home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/export_robot_descriptionExport.cmake
+/home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/export_robot_descriptionExport-noconfig.cmake

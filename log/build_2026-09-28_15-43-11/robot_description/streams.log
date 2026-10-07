@@ -1,0 +1,46 @@
+[0.015s] Invoking command in '/home/rob/mybot_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rob/microros_ws/install/sensor_msgs_py DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rob/mybot_ws/build/robot_description -- -j16 -l16
+[0.110s] [ 50%] Building CXX object CMakeFiles/robot_description.dir/hardware/diffbot_system.cpp.o
+[10.083s] [100%] Linking CXX shared library librobot_description.so
+[11.041s] [100%] Built target robot_description
+[11.058s] Invoked command in '/home/rob/mybot_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rob/microros_ws/install/sensor_msgs_py DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rob/mybot_ws/build/robot_description -- -j16 -l16
+[11.073s] Invoking command in '/home/rob/mybot_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rob/microros_ws/install/sensor_msgs_py DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rob/mybot_ws/build/robot_description
+[11.085s] -- Install configuration: ""
+[11.086s] -- Execute custom install script
+[11.086s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description//robot_description.xml
+[11.086s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/launch/hardware.launch.py
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/launch/sim.launch.py
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/urdf/my_bot.gazebo.xacro
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/urdf/my_bot.ros2_control.xacro
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/urdf/my_bot.urdf.xacro
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/meshes/CHASSIS.stl
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/meshes/LWHEEL.stl
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/meshes/RWHEEL.stl
+[11.087s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/config/my_bot_controllers.yaml
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/hardware/README.md
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/hardware/diffbot_system.cpp
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/hardware/include/robot_description/diffbot_system.hpp
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/library_path.sh
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/library_path.dsv
+[11.088s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/path.sh
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/environment/path.dsv
+[11.089s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/local_setup.bash
+[11.090s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/local_setup.sh
+[11.090s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/local_setup.zsh
+[11.090s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/local_setup.dsv
+[11.090s] -- Symlinking: /home/rob/mybot_ws/install/robot_description/share/robot_description/package.dsv
+[11.104s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[11.104s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/robot_description
+[11.104s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/ament_cmake_export_targets-extras.cmake
+[11.105s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.105s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[11.105s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[11.105s] -- Up-to-date symlink: /home/rob/mybot_ws/install/robot_description/share/robot_description/package.xml
+[11.105s] -- Installing: /home/rob/mybot_ws/install/robot_description/lib/librobot_description.so
+[11.112s] -- Set non-toolchain portion of runtime path of "/home/rob/mybot_ws/install/robot_description/lib/librobot_description.so" to ""
+[11.113s] -- Up-to-date: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/export_robot_descriptionExport.cmake
+[11.113s] -- Up-to-date: /home/rob/mybot_ws/install/robot_description/share/robot_description/cmake/export_robot_descriptionExport-noconfig.cmake
+[11.114s] Invoked command in '/home/rob/mybot_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rob/microros_ws/install/sensor_msgs_py DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rob/mybot_ws/build/robot_description
